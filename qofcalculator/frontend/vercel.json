@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "buildCommand": "npm install && npm run build",
+  "devCommand": "npm run dev",
+  "outputDirectory": "dist",
+  "installCommand": null,
+  "routes": [
+    {
+      "src": "^/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "^/.*",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_VERSION": "18.x",
+    "NPM_FLAGS": "--legacy-peer-deps"
+  }
+} 
